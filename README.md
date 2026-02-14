@@ -1,6 +1,19 @@
 # Dotfiles
 
-Configuration includes:
+### How to install:
+```sh
+# Clone into dotfiles
+git clone https://github.com/umbrix-dev/dotfiles.git
+cd dotfiles
+
+# Set Permission and run installer
+chmod +x ./install.sh
+./install.sh
+```
+
+---
+
+### Configuration includes:
 
 * [Btop](https://github.com/umbrix-dev/dotfiles/tree/master/btop)
 * [Kitty](https://github.com/umbrix-dev/dotfiles/tree/master/kitty)
@@ -17,8 +30,8 @@ Configuration includes:
 
 
 ---
+### Previews:
 
 ![preview_1](https://github.com/umbrix-dev/dotfiles/blob/master/Assets/preview_1.png)
 ![preview_2](https://github.com/umbrix-dev/dotfiles/blob/master/Assets/preview_2.png)
-
 
