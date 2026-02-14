@@ -1,0 +1,182 @@
+* {
+    bg: #151515;
+    bg-alt: #0a0a0a;
+    fg: #efefef;
+    fg-alt: #6D737C;
+    
+    accent: #7ee77e;
+    accent-alt: #5fc793;
+    
+    border-color: #292929;
+    border-active: #242424;
+    
+    urgent: #E66390;
+    
+    background-color: transparent;
+    text-color: @fg;
+    
+    font: "JetBrainsMono Nerd Font 14";
+}
+
+window {
+    transparency: "real";
+    background-color: @bg;
+    border: 1px solid;
+    border-color: @border-color;
+    border-radius: 0px;
+    width: 600px;
+    padding: 0px;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ inputbar, listview ];
+    padding: 0px;
+    border: 0px;
+}
+
+inputbar {
+    background-color: @bg;
+    text-color: @fg;
+    border: 0px 0px 1px 0px;
+    border-color: @border-color;
+    border-radius: 0px;
+    padding: 16px 16px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color: @accent;
+    font: "JetBrainsMono Nerd Font Bold 14";
+    padding: 0px 12px 0px 0px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: @fg;
+    placeholder-color: @fg-alt;
+    placeholder: "Search...";
+    cursor: text;
+    padding: 0px;
+}
+
+listview {
+    background-color: transparent;
+    columns: 1;
+    lines: 8;
+    spacing: 0px;
+    cycle: false;
+    dynamic: true;
+    layout: vertical;
+    padding: 8px 0px;
+}
+
+element {
+    background-color: transparent;
+    text-color: @fg-alt;
+    orientation: horizontal;
+    border-radius: 0px;
+    padding: 10px 16px;
+    border: 0px;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 24px;
+    margin: 0px 12px 0px 0px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+    horizontal-align: 0.0;
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color: @fg-alt;
+}
+
+element normal.urgent {
+    background-color: @urgent;
+    text-color: @bg;
+}
+
+element normal.active {
+    background-color: transparent;
+    text-color: @accent;
+}
+
+element selected.normal {
+    background-color: #7ee77e;
+    text-color: @bg;
+    border: 0px;
+    border-radius: 0px;
+}
+
+element selected.urgent {
+    background-color: @urgent;
+    text-color: @bg;
+}
+
+element selected.active {
+    background-color: @accent;
+    text-color: @bg;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color: @fg-alt;
+}
+
+element alternate.urgent {
+    background-color: transparent;
+    text-color: @urgent;
+}
+
+element alternate.active {
+    background-color: transparent;
+    text-color: @accent;
+}
+
+scrollbar {
+    width: 0px;
+    border: 0px;
+    handle-width: 0px;
+    padding: 0px;
+}
+
+message {
+    padding: 12px;
+    border: 0px;
+    background-color: @bg;
+}
+
+textbox {
+    text-color: @fg-alt;
+    background-color: transparent;
+    padding: 8px;
+}
+
+mode-switcher {
+    border: 1px 0px 0px 0px;
+    border-color: @border-color;
+    background-color: @bg;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 12px;
+    background-color: transparent;
+    text-color: @fg-alt;
+    border: 0px;
+    border-radius: 0px;
+}
+
+button selected {
+    background-color: @accent;
+    text-color: @bg;
+    border: 0px;
+}
