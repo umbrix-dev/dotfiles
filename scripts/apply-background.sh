@@ -13,7 +13,7 @@ mkdir -p ~/.config
 # List of configs
 configs="btop fastfetch hypr kitty rofi waybar"
 
-process_configs() {
+process_configs () {
     for cfg in $configs; do
         echo "Processing config: $cfg"
         
