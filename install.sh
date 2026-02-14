@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
-# simple script to apply my background
-swww img $(pwd)/background.png#!/usr/bin/env bash
-
-echo "Starting umbrix dotfiles uninstallation process..."
+echo "Starting umbrix dotfiles installation process..."
 echo ""
 
 # Ensure config directory exists
@@ -13,20 +10,20 @@ mkdir -p ~/.config
 # List of configs
 configs="btop fastfetch hypr kitty rofi waybar"
 
-process_configs() {
+process_configs () {
     for cfg in $configs; do
         echo "Processing config: $cfg"
         
-        echo "--- Remove symlink..."
-        [ -L ~/.config/$cfg ] && rm ~/.config/$cfg
+        echo "--- Creating backup..."
+        mv ~/.config/$cfg ~/.config/$cfg.bak
+        echo ""
+        
+        echo "--- Ensuring it exists as config..."
+        mkdir -p ~/.config/$cfg
         echo ""
 
-        echo "--- Restoring backup..."
-        [ -e ~/.config/$cfg.bak ] && mv ~/.config/$cfg.bak ~/.config/$cfg
-        echo ""
-
-        echo "--- Removing possible empty directory..."
-        rmdir ~/.config/$cfg 2>/dev/null
+        echo "--- Creating symlink..."
+        ln -s $(pwd)/$cfg ~/.config/$cfg
         echo ""
     done
     echo ""

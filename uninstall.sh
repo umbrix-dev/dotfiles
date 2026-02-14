@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# simple script to apply my background
-swww img $(pwd)/background.png#!/usr/bin/env bash
-
 echo "Starting umbrix dotfiles uninstallation process..."
 echo ""
 
