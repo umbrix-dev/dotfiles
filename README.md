@@ -32,6 +32,6 @@ chmod +x ./install.sh
 ---
 ### Previews:
 
-![preview_1](https://github.com/umbrix-dev/dotfiles/blob/master/Assets/preview_1.png)
-![preview_2](https://github.com/umbrix-dev/dotfiles/blob/master/Assets/preview_2.png)
+![preview_1](https://github.com/umbrix-dev/dotfiles/blob/master/assets/preview_1.png)
+![preview_2](https://github.com/umbrix-dev/dotfiles/blob/master/assets/preview_2.png)
 
