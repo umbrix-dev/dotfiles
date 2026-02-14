@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# simple script to apply my background
+swww img $(pwd)/background.png#!/usr/bin/env bash
+
 echo "Starting umbrix dotfiles uninstallation process..."
 echo ""
 
@@ -10,7 +13,7 @@ mkdir -p ~/.config
 # List of configs
 configs="btop fastfetch hypr kitty rofi waybar"
 
-process_configs() {
+process_configs () {
     for cfg in $configs; do
         echo "Processing config: $cfg"
         
