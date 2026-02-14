@@ -1,18 +1,20 @@
 # Dotfiles
 
 Configuration includes:
-	- BTOP
-	- Kitty
-	- Fastfetch
-	- Hyprland
-	- Rofi
-	- Scripts
-		- Blacklist rofi apps
-		- Install packages
-	- VSCode
-		- User Settings
-		- Custom Theme
-	- Waybar
+
+* BTOP
+* Kitty
+* Fastfetch
+* Hyprland
+* Rofi
+* Scripts
+	* Blacklist rofi apps
+	* Install packages
+* VSCode
+	* User Settings
+	* Custom Theme
+* Waybar
+
 
 ---
 
