@@ -1,0 +1,76 @@
+{
+    "layer": "top",
+    /* 
+        Change the output to your preferred montior 
+        or just comment this line out.
+    */
+    "output": ["DP-1"],
+    "position": "top",
+    "height": 40,
+    "margin-top": 10,
+    "modules-center": [
+        "clock",
+        "mpris",
+        "hyprland/workspaces",
+        "pulseaudio",
+        "network",
+        "tray"
+    ],
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "mpris": {
+      "format": "{player_icon} {title} - {artist}",
+      "format-paused": "{status_icon} <i>{title} - {artist}</i>",
+      "max-length": 30,
+      "player-icons": {
+        "default": "󰎆 ",
+        "cmus": "",
+        "mpv": "🎵",
+        "vlc": "🎬",
+        "spotify": " "
+      },
+      "status-icons": {
+        "paused": "⏸"
+      },
+      "on-click": "playerctl play-pause",
+      "on-click-right": "playerctl next",
+      "smooth-scrolling-threshold": 10,
+      "on-scroll-down": "playerctl previous"
+    },
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-bluetooth": " {volume}%",
+        "format-muted": "󰖁",
+        "scroll-step": 1,
+        "on-click": "pavucontrol",
+        "ignored-sinks": ["Easy Effects Sink"],
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headest": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "tooltip-format": "Volume: {volume}%"
+    },
+    "network": {
+        "interface": "wlan0",
+        "format": "{ifname}",
+        "format-wifi": "{icon}",
+        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-disconnected": "󰤭",
+        "on-click": "kitty --hold nmtui",
+        "max-length": 50,
+        "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+        "tooltip-format": "Connected: {essid}"
+    }
+}
