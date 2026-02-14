@@ -2,7 +2,7 @@
 
 Configuration includes:
 
-* [BTOP](https://github.com/umbrix-dev/dotfiles/tree/master/btop)
+* [Btop](https://github.com/umbrix-dev/dotfiles/tree/master/btop)
 * [Kitty](https://github.com/umbrix-dev/dotfiles/tree/master/kitty)
 * [Fastfetch](https://github.com/umbrix-dev/dotfiles/tree/master/fastfetch)
 * [Hyprland](https://github.com/umbrix-dev/dotfiles/tree/master/hypr)
