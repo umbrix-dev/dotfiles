@@ -1,0 +1,89 @@
+/* 
+    This configuration uses a custom theme
+    Make sure to follow these steps to install it:
+        1:  CTRL + P (open command palette)
+        2:  Type 'Extensions: Install from VSIX'
+        3:  Press Enter and select 'minimal-kiwi-darker.vsix' from
+            the dotfiles/vscode directory,
+            example: '~/dotfiles/vscode/minimal-kiwi-darker.vsix'
+*/
+
+{   
+    // Theme
+    "workbench.colorTheme": "Minimal Kiwi Darker",
+    "workbench.iconTheme": "vscode-icons",
+    "editor.fontFamily": "JetBrainsMono Nerd Font Mono",
+    "editor.fontLigatures": true,
+
+
+    // Window settings
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+    "window.customMenuBarAltFocus": false,
+    "window.enableMenuBarMnemonics": false,
+    "window.menuBarVisibility": "hidden",
+    
+
+    // Hide unnecessary UI
+    "workbench.activityBar.location": "hidden",
+    "workbench.layoutControl.enabled": false,
+    "workbench.navigationControl.enabled": false,
+    "window.commandCenter": false,
+    "extensions.ignoreRecommendations": true,
+    "editor.minimap.enabled": false,
+    "breadcrumbs.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "terminal.integrated.stickyScroll.enabled": false,
+
+    
+    // UI Settings
+    "workbench.sideBar.location": "right",
+    "explorer.compactFolders": false,
+    "editor.cursorStyle": "block",
+    "editor.hideCursorInOverviewRuler": true,
+    "debug.showBreakpointsInOverviewRuler": false,
+    "editor.overviewRulerBorder": false,
+
+
+    // Smoothness
+    "editor.cursorBlinking": "smooth",
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+
+
+    // Editor Rendering
+    "editor.renderControlCharacters": false,
+    "editor.guides.indentation": true,
+    "editor.guides.bracketPairs": false,
+
+
+    // Disable AI
+    "chat.disableAIFeatures": true,
+    "editor.lightbulb.enabled": "off",
+
+
+    // Disable automatic updates
+    "update.mode": "none",
+
+
+    // Disable telemetry
+    "telemetry.telemetryLevel": "off",
+    "telemetry.editStats.enabled": false,
+    "telemetry.feedback.enabled": false,
+
+
+    // MISC
+    "editor.dragAndDrop": false,
+    "editor.renderWhitespace": "none",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.formatOnSave": false,
+    "workbench.editor.showTabs": "none",
+
+
+    // Extensions
+    "prettier.useTabs": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    }
+}
