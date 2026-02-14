@@ -8,11 +8,11 @@ Configuration includes:
 * [Hyprland](https://github.com/umbrix-dev/dotfiles/tree/master/hypr)
 * [Rofi](https://github.com/umbrix-dev/dotfiles/tree/master/rofi)
 * [Scripts](https://github.com/umbrix-dev/dotfiles/tree/master/scripts)
-	* Blacklist rofi apps
-	* Install packages
+	* [Blacklist rofi apps](https://github.com/umbrix-dev/dotfiles/blob/master/scripts/rofi-blacklist.sh)
+	* [Install packages](https://github.com/umbrix-dev/dotfiles/blob/master/scripts/install_packages.sh)
 * [VSCode](https://github.com/umbrix-dev/dotfiles/tree/master/vscode)
-	* User Settings
-	* Custom Theme
+	* [User Settings](https://github.com/umbrix-dev/dotfiles/blob/master/vscode/settings.json)
+	* [Custom Theme](https://github.com/umbrix-dev/dotfiles/tree/master/vscode/minimal-kiwi-darker)
 * [Waybar](https://github.com/umbrix-dev/dotfiles/tree/master/waybar)
 
 
