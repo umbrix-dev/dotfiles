@@ -1,0 +1,72 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    
+    "logo": {
+        /*
+            Make sure to update this path to wherever your
+            ascii art is located, if you wanna use mine you
+            can just copy the 'ascii.txt' in the dotfiles root
+            directory to any location and update this path
+            or replace the logo with yours.
+        */
+        "source": "~/ascii.txt"
+    },
+
+    "display": {
+        "separator": " ≫ ",
+        
+        "color": {
+            "separator": "green",
+            "keys": "green"
+        }
+    },
+
+    "modules": [
+        {
+            "type": "custom",
+            "format": "┌─ {#2}umbrix{#1}@{#cyan}archlinux"
+        },
+
+        {
+            "type": "custom",
+            "format": "│"
+        },
+
+        {
+            "type": "os",
+            "key": "├─  os  ",
+            "keyColor": "green"
+        },
+
+        {
+            "type": "kernel",
+            "key": "├─  kern",
+            "keyColor": "green",
+            "format": "{1} {2}"
+        },
+
+        {
+            "type": "packages",
+            "key": "├─  pkgs",
+            "keyColor": "green"
+        },
+
+        {
+            "type": "shell",
+            "key": "├─  sh  ",
+            "keyColor": "green"
+        }, 
+
+        {
+            "type": "wm",
+            "key": "├─  wm  ",
+            "keyColor": "green"
+        },
+
+        {
+            "type": "terminal",
+            "key": "├─  term",
+            "keyColor": "green"
+        }
+    ]
+}
