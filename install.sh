@@ -57,8 +57,28 @@ execute_scripts () {
     echo ""
 }
 
+process_shell () {
+    echo "Handling zsh files..."
+
+    echo "--- Creating backups..."
+    mv ~/.zshrc ~/.zshrc.bak
+    mv ~/.p10k.zsh ~/.p10k.zsh
+    echo ""
+
+    echo "--- Checking files..."
+    [ -f ~/.p10k.zsh ] || touch ~/.p10k.zsh
+    [ -f ~/.p10k.zsh ] || touch ~/.p10k.zsh
+    echo ""
+
+    echo "--- Creating symlinks..."
+    ln -s $(pwd)/zsh/.zshrc ~/.zshrc
+    ln -s $(pwd)/zsh/.p10k.zsh ~/.p10k.zsh
+    echo ""
+}
+
 main () {
     process_configs
+    process_shell
     reload_configs
     execute_scripts
 }

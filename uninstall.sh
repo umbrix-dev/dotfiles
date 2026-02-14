@@ -32,6 +32,25 @@ process_configs () {
     echo ""
 }
 
+process_shell () {
+    echo "Handling zsh files..."
+
+    echo "--- Remove symlinks..."
+    [ -L ~/.zshrc ] && rm ~/.zshrc
+    [ -L ~/.p10k.zsh ] && rm ~/.p10k.zsh
+    echo ""
+
+    echo "--- Restoring backups..."
+    [ -e ~/.zshrc.bak ] && mv ~/.zshrc.bak ~/.zshrc
+    [ -e ~/.p10k.zsh  ] && mv ~/.p10k.zsh.bak ~/.p10k.zsh
+    echo ""
+
+    echo "--- Removing possible empty files..."
+    [ ! -s ~/.zshrc ] && rm ~/.zshrc
+    [ ! -s ~/.p10k.zsh ] && rm ~/.p10k.zsh
+    echo ""
+}
+
 reload_configs () {
     echo ""
     echo "Reloading configs..."
@@ -43,6 +62,7 @@ reload_configs () {
 
 main () {
     process_configs
+    process_shell
     reload_configs
 }
 
