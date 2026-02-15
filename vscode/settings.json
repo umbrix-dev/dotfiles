@@ -3,7 +3,7 @@
     Make sure to follow these steps to install it:
         1:  CTRL + P (open command palette)
         2:  Type 'Extensions: Install from VSIX'
-        3:  Press Enter and select .vsix file which you can get from here https://github.com/umbrix-dev/minimal-kiwi-darker
+        3:  Press Enter and select the custom themes .vsix file which you can get from here https://github.com/umbrix-dev/minimal-kiwi-darker
 */
 
 {   
