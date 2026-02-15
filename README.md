@@ -1,4 +1,14 @@
 # Dotfiles
+### Install using stow
+
+```bash
+git clone https://github.com/umbrix-dev/dotfiles.git
+cd dotfiles
+stow -t ~ kitty fastfetch zsh # etc...
+```
+
+
+---
 
 ### Configuration includes:
 
