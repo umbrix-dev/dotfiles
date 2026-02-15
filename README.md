@@ -21,7 +21,6 @@ stow -t ~ kitty fastfetch zsh # etc...
 	* [Blacklist rofi apps](https://github.com/umbrix-dev/dotfiles/blob/master/scripts/rofi-blacklist.sh)
 * [VSCode](https://github.com/umbrix-dev/dotfiles/tree/master/vscode)
 	* [User Settings](https://github.com/umbrix-dev/dotfiles/blob/master/vscode/settings.json)
-	* [Custom Theme](https://github.com/umbrix-dev/dotfiles/tree/master/vscode/minimal-kiwi-darker)
 * [Waybar](https://github.com/umbrix-dev/dotfiles/tree/master/waybar)
 
 
