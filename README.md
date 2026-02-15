@@ -1,18 +1,5 @@
 # Dotfiles
 
-### How to install:
-```sh
-# Clone into dotfiles
-git clone https://github.com/umbrix-dev/dotfiles.git
-cd dotfiles
-
-# Set Permission and run installer
-chmod +x ./install.sh
-./install.sh
-```
-
----
-
 ### Configuration includes:
 
 * [Btop](https://github.com/umbrix-dev/dotfiles/tree/master/btop)
