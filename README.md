@@ -22,7 +22,6 @@ chmod +x ./install.sh
 * [Rofi](https://github.com/umbrix-dev/dotfiles/tree/master/rofi)
 * [Scripts](https://github.com/umbrix-dev/dotfiles/tree/master/scripts)
 	* [Blacklist rofi apps](https://github.com/umbrix-dev/dotfiles/blob/master/scripts/rofi-blacklist.sh)
-	* [Install packages](https://github.com/umbrix-dev/dotfiles/blob/master/scripts/install_packages.sh)
 * [VSCode](https://github.com/umbrix-dev/dotfiles/tree/master/vscode)
 	* [User Settings](https://github.com/umbrix-dev/dotfiles/blob/master/vscode/settings.json)
 	* [Custom Theme](https://github.com/umbrix-dev/dotfiles/tree/master/vscode/minimal-kiwi-darker)
