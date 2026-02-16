@@ -18,9 +18,7 @@ stow -t ~ kitty fastfetch zsh # etc...
 * [Hyprland](https://github.com/umbrix-dev/dotfiles/tree/master/hypr)
 * [Rofi](https://github.com/umbrix-dev/dotfiles/tree/master/rofi)
 * [Scripts](https://github.com/umbrix-dev/dotfiles/tree/master/scripts)
-	* [Blacklist rofi apps](https://github.com/umbrix-dev/dotfiles/blob/master/scripts/rofi-blacklist.sh)
 * [VSCode](https://github.com/umbrix-dev/dotfiles/tree/master/vscode)
-	* [User Settings](https://github.com/umbrix-dev/dotfiles/blob/master/vscode/settings.json)
 * [Waybar](https://github.com/umbrix-dev/dotfiles/tree/master/waybar)
 
 
